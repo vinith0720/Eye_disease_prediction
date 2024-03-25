@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block navbar %}
+<li class="nav-item"><a class="btn btn-primary "  href="{{ url_for('home') }}">Home</a></li>
+<li class="nav-item"><a class="btn btn-primary " href="{{ url_for('about')}}">About</a></li>
+<li class="nav-item"><a class="btn btn-success" href="{{ url_for('predict')}}">EYE PREDICTION</a></li>
+
+{% endblock navbar %}
+
+{% block content %}
+    <div class="container">
+        <h1></h1>
+    </div>
+{% endblock content %}

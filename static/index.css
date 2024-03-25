@@ -1,0 +1,33 @@
+.button-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    display: inline-block;
+    margin-right: 10px; /* Adjust as needed */
+  }
+.container-fluid{
+  margin: auto;
+  width: 100%; /* Adjust the width as needed */
+}
+body {
+  background-color: #333; /* Set a dark color of your choice */
+  color: #fff; /* Set a light color for text */
+}
+.audio{
+
+  display: none;
+}
+.para{
+  color: black;
+  font-size: x-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ulll{
+  color: black;
+  font-size: medium;
+}
+
+  

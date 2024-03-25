@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block navbar %}
+<li class="nav-item"><a class="btn btn-primary" aria-current="page" href="{{ url_for('home')}}">Home</a></li>
+<li class="nav-item"><a class="btn btn-primary" href="{{ url_for('about')}}">About</a></li>
+<!-- <li class="nav-item"><a class="btn btn-primary">Image Predict</a></li> -->
+{% endblock navbar %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <h2>SELECT THE INPUT IMAGE TO PREDICT THE EYE DISEASES</h2>
+        </div>
+        <div class="row">
+            <form action="{{ url_for('predict') }}" method="POST" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Default file input example</label>
+                    <input name="image" class="form-control" type="file" id="formFile" required>
+                </div>
+
+                <button class="btn btn-success" type="submit" onclick="changeBackground();Myfunction();">PREDICT NOW</button>
+            </form>
+        </div>
+<br>
+    <div class="container">
+      <div class="row">
+         
+        <audio  id = "audio" loop>
+          <source src="{{ url_for('static', filename='/files/ms.mp3') }}" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        
+      </div>
+    </div>
+    <script>
+      function changeBackground() {
+        document.body.style.backgroundImage =  "url('static/files/madara.gif')";;
+      }
+
+      function Myfunction() {
+        var audio = document.getElementById('audio');
+        
+        audio.play();
+      
+      }
+    </script>
+    
+{% endblock content %}

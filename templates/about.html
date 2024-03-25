@@ -1,0 +1,39 @@
+{% extends "layout2.html" %}
+
+{% block navbar %}
+<li class="nav-item"><a class="btn btn-primary" aria-current="page" href="{{ url_for('home') }}">Home</a></li>
+
+<li class="nav-item"><a class="btn btn-success"  href="{{ url_for('predict') }}">EYE PREDICT</a></li>
+{% endblock navbar %}
+{% block content %}
+    
+  <div class="container">
+    <h1>About</h1><br>
+    <p  class="para">ODIR Eye Health is committed to promoting optimal eye health and ensuring the well-being of individuals' vision. Our organization is dedicated to raising awareness about the importance of regular eye care, early detection of eye conditions, and adopting healthy practices for maintaining clear and sharp vision.</p>
+    <ul class="ulll">
+        <li>Education and Awareness:
+            We strive to educate individuals about the significance of regular eye examinations and the role they play in identifying potential eye conditions at an early stage. Through informative campaigns, articles, and resources, we aim to empower people to make informed decisions regarding their eye health.</li>
+
+        <li>Education and Awareness:
+            We strive to educate individuals about the significance of regular eye examinations and the role they play in identifying potential eye conditions at an early stage. Through informative campaigns, articles, and resources, we aim to empower people to make informed decisions regarding their eye health.</li>
+
+        <li>Eye Disease Prevention:
+            We advocate for proactive measures to prevent common eye diseases such as cataracts, glaucoma and diabetic retinopathy. By promoting healthy lifestyle habits, proper nutrition, and protective measures against harmful environmental factors, we aim to reduce the risk of these diseases and their impact on individuals' vision.</li>
+
+        <li>Eye Safety and Protection:
+            ODIR Eye Health emphasizes the significance of eye safety in various environments, including workplaces, sports activities, and daily life. We encourage the use of protective eyewear, such as safety glasses and goggles, to prevent eye injuries. Additionally, we promote awareness about the importance of shielding eyes from excessive UV exposure through the use of sunglasses that offer UV protection</li>
+
+        <li>Collaboration and Research:
+            ODIR Eye Health actively collaborates with eye care professionals, researchers, and organizations to advance knowledge in the field of eye health. By supporting research initiatives, clinical studies, and the development of innovative treatments, we aim to contribute to the improvement of eye care practices and outcomes.</li>
+        <li>Support and Resources:
+            ODIR Eye Health provides a platform for individuals to access reliable information, resources, and support related to various eye conditions, treatments, and general eye care. We strive to empower individuals to take an active role in their eye health journey and make informed decisions for themselves and their loved ones.</li>
+   
+   
+   
+    </ul>
+
+
+
+
+  </div>
+{% endblock content %}

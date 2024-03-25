@@ -1,0 +1,14 @@
+{% extends "layout2.html" %}
+
+{% block content %}
+    <div class="container">
+        <!-- <div class="row"> -->
+            <img class="img-thumbnail img-fluid" width="400" height="300" src="{{ url_for('static', filename='predictions/'+img_path) }}"  alt="">
+        <!-- </div> -->
+        <div class="row">
+            <h2 class="display-3"> Your Eye is : {{ result }}</h2>
+            
+        </div>
+        
+    </div>
+{% endblock content %}
