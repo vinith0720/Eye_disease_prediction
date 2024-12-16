@@ -1,4 +1,4 @@
-# Flask Image Classification Application
+# EYE DISEASE PREDICTION
 
 This is a Flask application for predicting image classes using a pre-trained deep learning model. The app accepts an image upload, processes it, and predicts its class using a TensorFlow/Keras model.
 
@@ -60,12 +60,9 @@ project-directory/
    ```
 2. Open your web browser and navigate to `http://127.0.0.1:5000`.
 
-## Code
+## Routes
 
 ```python
-
-# Routes
-
 @app.route("/")
 def home():
     return render_template('home.html')
